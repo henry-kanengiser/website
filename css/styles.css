@@ -65,16 +65,22 @@
 }
 
 .content {
-  position: fixed;
+  position: absolute; /* changed from fixed because modal's don't work well when within a position: fixed div */
   top: 15%;
   left: 35%;
   right: 15%;
   bottom: 1%;
-  background-color: #b38282;
+  /* background-color: #b38282; */
   border: 1px solid #ccc;
   margin-top: 20px;
+  overflow: auto; /* scrollable content */
 
 }
+
+.modal-backdrop {
+  z-index: 1;
+}
+
 
 .sub-content {
   font-size: large;
