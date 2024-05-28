@@ -1,0 +1,82 @@
+/* Global styles */
+
+.comfortaa-title {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.varela-round-title {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.title {
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+.varela-round {
+  font-family: "Varela Round", sans-serif;
+  font-style: normal;
+}
+
+/* Layout styles */
+#nametitle {
+  position: fixed;
+  top: 5%;
+  left: 10%;
+  padding-left: 20px;
+}
+
+.menu {
+  position: fixed;
+  top: 15%;
+  left: 10%;
+  right: 75%;
+  /* background-color: #ffffff; */
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  /* box-shadow: 0 2px 5px rgba(0,0,0,0.1);  */
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  margin-bottom: 10px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333333;
+  /* Change this to your desired text color */
+}
+
+.menu ul li a:hover {
+  color: #555555;
+  /* Change this to your desired hover text color */
+}
+
+.content {
+  position: fixed;
+  top: 15%;
+  left: 35%;
+  right: 15%;
+  bottom: 1%;
+  background-color: #b38282;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+
+}
+
+.sub-content {
+  font-size: large;
+  padding: 20px;
+}
