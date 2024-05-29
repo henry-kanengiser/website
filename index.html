@@ -35,24 +35,25 @@
             <li>Projects (images and links to projects; one click opens a )</li>
             <li>Links (resume, linkedin, email)</li> -->
     <div class="menu varela-round">
-        <ul>
-            <li>Home</li>
-            <li>Projects</li>
-            <li>Links</li>
-        </ul>
+        <button class="menu-button" id="home-button">Home</button>
+        <button class="menu-button" id="projects-button">Projects</button>
+        <button class="menu-button" id="Links-button">Links</button>
     </div>
 
     <!-- All the content will go here, and will be turned on and off by clicking the menu buttons -->
     <div class="content">
+        <!-- id Home is what will show on the screen when first opened. -->
         <div class="sub-content varela-round" id="Home">
+            <p><b>CHANGE TO FIRST PERSON</b></p>
             <p>Henry is a planner-researcher who is passionate about sustainability, mobility, and equity. He enjoys
-                using
-                data visualization and storytelling to inform, engage, and empower people who otherwise may not be given
-                a voice to make decisions. He is a skilled researcher, writer, data analyst, and communicator with
-                experience working at non-profits and within several public sector agencies. </p>
+                using data visualization and storytelling to inform, engage, and empower people who otherwise may not be
+                given a voice to make decisions. Henry is a skilled researcher, writer, data analyst, and communicator
+                with experience working at non-profits and within several public sector agencies. </p>
             <p>He lives and works in New York City.</p>
+            <p><b>Add a photo of Henry here?</b></p>
         </div>
 
+        <!-- id Projects is where information about my projects can be found. I use bootstrap functions to set this up -->
         <div class="sub-content varela-round" id="Projects">
             <p>Subway income
                 FCNY Community solar
@@ -62,40 +63,275 @@
                 Green infrastructure article (link to Wagner Planner)
                 MDRC WorkAdvance report (link to MDRC)
                 Voter participation article (link to City Limits)</p>
-            <div class="card" style="width: 18rem;">
-                <img src="img/reti-solar.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
-                        RETI Center Community Solar Outreach Tool
-                    </button>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <!-- Community Solar Map -->
+                        <div class="card">
+                            <img src="img/reti-solar.png" class="card-img-top" alt="Screenshot of Community Solar Tool">
+                            <div class="card-body">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    RETI Center Community Solar Outreach Tool
+                                </button>
 
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-fullscreen">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">RETI Center Community Solar
-                                        Outreach
-                                        Tool</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">RETI Center
+                                                    Community Solar Outreach Tool</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Add gif of using the website here?</p>
+                                                <p>This interactive map illustrates the suitability of buildings across
+                                                    NYC for hosting a rooftop community solar panel array. I conducted a
+                                                    thorough analysis of NYC buildings for RETI Center to support its
+                                                    Local Power program in expanding to more sites across the city. This
+                                                    tool identifies clusters of highly suitable buildings (called
+                                                    campaign zones) and can be used as a strategy tool for outreach to
+                                                    property owners at suitable sites.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-outline-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn btn-secondary">Open</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="modal-body">
-                                    <p>Add gif of using the website here?</p>
-                                    <p>This interactive map illustrates the suitability of buildings across NYC for hosting
-                                    a rooftop community solar panel array. I conducted a thorough analysis of NYC
-                                    buildings for RETI Center to support its Local Power program in expanding to more
-                                    sites across the city. This tool identifies clusters of highly suitable buildings
-                                    (called campaign zones) and can be used as a strategy tool for outreach to property
-                                    owners at suitable sites.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- Capstone card -->
+                        <div class="card">
+                            <img src="img/capstone-cover.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                    data-bs-target="#capstoneModal">
+                                    Midtown Bus Terminal Capstone Project
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="capstoneModal" tabindex="-1"
+                                    aria-labelledby="capstoneModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="capstoneModalLabel">Midtown Bus
+                                                    Terminal Capstone Project</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="img/capstone-pages.png" class="modal-body-img"
+                                                    alt="Two pages of the capstone report">
+                                                <p>This analysis of temporary bus operations at the Port Authority's
+                                                    Midtown Bus Terminal was my capstone group project as part of my NYU
+                                                    Masters of Urban Planning. Given the limited capacity of the bus
+                                                    terminal during its upcoming reconstruction, our team identified
+                                                    alternative terminals to accommodate rush hour buses and analyzed
+                                                    bus routes to determine which could be rerouted to each terminal
+                                                    with minimal impacts on travelers.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-outline-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn btn-secondary">Open</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-outline-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn btn-secondary">Open website</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="padding-top: 20px;">
+                    <div class="col">
+                        <!-- Bus Depot Solar -->
+                        <div class="card">
+                            <img src="img/depot-solar-cover.png" class="card-img-top" alt="Depot Solar Report Cover">
+                            <div class="card-body">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                    data-bs-target="#depotsolarModal">
+                                    Solar Power and MTA Zero Emission Buses
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="depotsolarModal" tabindex="-1"
+                                    aria-labelledby="depotsolarModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="depotsolarModalLabel">Solar Power and
+                                                    MTA Zero Emission Buses</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Add two-page side-by-side of the website here?</p>
+                                                <p>This report presents some of the opportunities that the MTA could
+                                                    harness during its transition to an all-electric bus fleet. Working
+                                                    as a Senior Graduate Researcher at the NYU Rudin Center, I analyzed
+                                                    the MTA's published zero-emission transition plan and conducted a
+                                                    geospatial analysis of the agency's existing bus depots to identify
+                                                    how much potential electricity could be generated by rooftop solar
+                                                    at the depots. I also discuss some of the challenges the agency
+                                                    faces in trying something so bold and ambitious, and suggest some
+                                                    means of overcoming those challenges.
+                                                </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-outline-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn btn-secondary">Open</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- Subway Income card -->
+                        <div class="card">
+                            <img src="img/subway-income-cover.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                    data-bs-target="#subwayModal">
+                                    Subway Income Interactive Map
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="subwayModal" tabindex="-1"
+                                    aria-labelledby="subwayModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="subwayModalLabel">Subway Income
+                                                    Interactive Map</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <!-- <img src="img/capstone-pages.png" class="modal-body-img"
+                                                    alt="Two pages of the capstone report"> -->
+                                                <p>Add gif of using the website here?</p>
+                                                <p>This was a personal project I developed to understand the
+                                                    demographics of New Yorkers that live along each subway line. I used
+                                                    my existing data analysis skills and got to apply my new JavaScript
+                                                    and MaxBox GL JS skills to create this interesting tool.
+                                                </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-outline-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn btn-secondary">Open</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="padding-top: 20px;">
+                    <div class="col">
+                        <!-- Green Infrastructure Article -->
+                        <div class="card">
+                            <img src="img/gi-cover.png" class="card-img-top" alt="Depot Solar Report Cover">
+                            <div class="card-body">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                    data-bs-target="#giModal">
+                                    NYC Green Infrastructure Analysis Article
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="giModal" tabindex="-1" aria-labelledby="giModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="giModalLabel">NYC Green Infrastructure
+                                                    Analysis Article</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="img/gi-article-content.png" class="modal-body-img"
+                                                    alt="Top of the green infrastructure article in the Wagner Planner">
+                                                <p>This article told the story of the rollout of green infrastructure
+                                                    across NYC. I analyzed NYC DEP Open Data on the location and types
+                                                    of green infrastructure that has been built across the city and
+                                                    identified some interesting trends in the types of infrastructure
+                                                    installed in certain neighborhoods. The research was ultimately
+                                                    published in the Wagner Planner, the independent student journal of
+                                                    the Urban Planning Student Association at NYU Wagner.
+                                                </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-outline-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn btn-secondary">Open</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- WorkAdvance card -->
+                        <div class="card">
+                            <img src="img/workadvance-cover.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                    data-bs-target="#waModal">
+                                    WorkAdvance 7-Year Impact Report
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="waModal" tabindex="-1" aria-labelledby="waModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="waModalLabel">WorkAdvance 7-Year Impact
+                                                    Report</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="img/workadvance-pages.png" class="modal-body-img"
+                                                    alt="Two pages of the WorkAdvance report">
+                                                <p>I was the lead author of this MDRC report analyzing the long-term
+                                                    impacts of an innovative sectoral workforce development program,
+                                                    WorkAdvance. The report tracked the long-term employment and
+                                                    earnings of participants in the program at four organizations across
+                                                    the country and compared them to a randomized control sample. For
+                                                    this report, I added an racial equity analysis that explored the
+                                                    economic impacts of this program by the race and ethnicity of
+                                                    participants.
+                                                </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-outline-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn btn-secondary">Open</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

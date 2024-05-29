@@ -41,6 +41,29 @@
   /* border: 1px solid #ccc; */
   border-radius: 5px;
   /* box-shadow: 0 2px 5px rgba(0,0,0,0.1);  */
+  text-align: left;
+}
+
+.menu-button {
+  /* basically remove all button styling to re-create from scratch */
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.menu-button:hover {
+  color: #282828;
+  font-style: italic;
+  font-weight: bold;
+  font-size: larger;
+  margin-bottom:10px;
+
 }
 
 .menu ul {
@@ -77,10 +100,22 @@
 
 }
 
-.modal-backdrop {
-  z-index: 1;
+/* set standard dimensions */
+.card-img-top {
+  height: 150px;
+  object-fit: cover;
+
 }
 
+.modal-body-img {
+  height: 350px;
+  object-fit: contain;
+  padding-bottom: 20px;
+}
+
+/* .modal-body {
+  text-align: left;
+} */
 
 .sub-content {
   font-size: large;
