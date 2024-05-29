@@ -53,6 +53,7 @@
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+  /* set up vertical alignment of buttons within the div */
   display: block;
   margin-bottom: 15px;
 }
@@ -63,7 +64,14 @@
   font-weight: bold;
   font-size: larger;
   margin-bottom:10px;
+}
 
+.menu-button-active {
+  text-decoration: underline;
+  font-style: normal;
+  font-weight: bold;
+  font-size: larger;
+  margin-bottom:10px;
 }
 
 .menu ul {
