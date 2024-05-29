@@ -42,6 +42,7 @@
   border-radius: 5px;
   /* box-shadow: 0 2px 5px rgba(0,0,0,0.1);  */
   text-align: left;
+  font-size: large;
 }
 
 .menu-button {
@@ -105,14 +106,29 @@
   text-align: left;
 } */
 
+/* remove hyperlink styling so buttons look cleaner */
+a {
+  color: inherit; /* keep the styling of the above div */
+  text-decoration: inherit; /* no underline */
+}
+
 .sub-content {
   font-size: large;
   transition-duration: all 1s;
   /* padding: 20px; */
 }
 
+.henry-picture-parent {
+  position: fixed;
+  top: 60%;
+  bottom: 1%;
+  left: 10%;
+  right: 75%;
+}
+
 .henry-picture {
-  margin-top: 20px;
+  margin: 0 auto;
+  padding: 20px;
   text-align: center;
   max-width: 100%;
   max-height: 100%;
