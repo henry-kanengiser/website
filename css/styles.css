@@ -118,6 +118,22 @@ a {
   /* padding: 20px; */
 }
 
+/* create style for links buttons */
+.links-button {
+  /* basically remove all button styling to re-create from scratch */
+  background: #e7e7e7;
+	color: inherit;
+	border: none;
+  padding: 10px;
+  border-radius: 5px;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
 .henry-picture-parent {
   position: fixed;
   top: 60%;
