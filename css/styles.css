@@ -60,7 +60,7 @@
 
 .menu-button:hover {
   color: #282828;
-  font-style: italic;
+  font-style: normal;
   font-weight: bold;
   font-size: larger;
   margin-bottom:10px;
@@ -68,32 +68,12 @@
 
 .menu-button-active {
   text-decoration: underline;
-  font-style: normal;
+  font-style: italic;
   font-weight: bold;
   font-size: larger;
   margin-bottom:10px;
 }
 
-.menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menu ul li {
-  margin-bottom: 10px;
-}
-
-.menu ul li a {
-  text-decoration: none;
-  color: #333333;
-  /* Change this to your desired text color */
-}
-
-.menu ul li a:hover {
-  color: #555555;
-  /* Change this to your desired hover text color */
-}
 
 .content {
   position: absolute; /* changed from fixed because modal's don't work well when within a position: fixed div */
@@ -102,7 +82,7 @@
   right: 15%;
   bottom: 1%;
   /* background-color: #b38282; */
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   margin-top: 20px;
   overflow: auto; /* scrollable content */
 
@@ -127,5 +107,6 @@
 
 .sub-content {
   font-size: large;
-  padding: 20px;
+  transition-duration: all 1s;
+  /* padding: 20px; */
 }
