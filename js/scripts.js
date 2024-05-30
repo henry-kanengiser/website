@@ -41,3 +41,12 @@ $('#links-button').on('click', function () {
     $('#links').show();
 
 })
+
+// Toggle row styling based on screen width
+$(window).on('resize', function() {
+    if($(window).width() < 666) {
+        $('.row').removeClass('row2');
+    }else{
+        $('.row').addClass('row2');
+    }
+})
